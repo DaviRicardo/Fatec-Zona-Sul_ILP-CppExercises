@@ -1,0 +1,32 @@
+#include <iostream>
+#include <cstdlib>
+using namespace std;
+
+int lern1();
+int modulo (int numero);
+
+int main () {
+  system ("cls");
+  
+  int num, modu;
+  num = lern1();  
+  modu = modulo(num);  
+  cout << endl << modu << endl; 
+}
+
+int lern1 () { 
+  int n1;
+  cout << "Digite n1: ";
+  cin >> n1;  
+  return n1;
+}
+
+int modulo (int numero) {
+  int modu;
+  if (numero < 0) {
+    modu = numero * -1;
+  } else { 
+    modu = numero;
+  } 
+  return modu;   
+}
